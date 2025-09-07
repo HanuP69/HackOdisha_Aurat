@@ -299,7 +299,7 @@ EMOTION: [happy | neutral | sad | concern]
     """
 
     try:
-        llm_response = llm_google.invoke(prompt)
+        
         akash_response = akash_client.chat.completions.create(
     model="DeepSeek-V3-1",
     messages=[
@@ -372,7 +372,7 @@ EMOTION: [happy | neutral | sad | concern]
         raise HTTPException(status_code=500, detail="Viseme JSON read failed")
 
     visemes = {"mouthCues": rhubarb_out.get("mouthCues", [])}
-    audio_url = f"http://localhost:{PORT}/static/{file_id}.wav"
+    audio_url = f"/static/{file_id}.wav"
 
     return {
         "chat": chat_text,
