@@ -3,7 +3,7 @@
 ## 📌 Overview  
 **DocAI** is an **innovative healthcare solution** that provides patients with a **convenient, user-friendly, and accessible interface** to connect with **AI-powered virtual doctor** in real time.  
 
-Through its **interactive AI-generated avatar**, patients can enjoy **natural, human-like consultations**, breaking barriers in digital healthcare.  
+Through its **interactive AI-generated avatar**, patients can enjoy **natural, human-like consultations with real time animations and lip syncing**, breaking barriers in digital healthcare.  
 
 ### ✨ Key Highlights  
 - 🌐 **Multilingual support** → Accessible to users from diverse regions.  
