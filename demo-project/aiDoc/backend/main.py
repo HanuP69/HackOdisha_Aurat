@@ -284,10 +284,10 @@ Tasks:
 - Respond in the SAME language that the patient types.
 - Suggest home remedies or safe OTC meds if minor.
 - If very very very serious, urge the patient to see a local physician, not always.
+
 - Keep responses short (2 - 8 sentences).
 - Never say "I am an AI".
 - Always reply as Dr. Luna.
-
 
 Conversation so far:
 {conversation}
@@ -408,3 +408,4 @@ async def voice(file: UploadFile, session_id: str = Form("default")):
     result = await process_text_input(user_text, session_id)
     result["user_transcript"] = user_text
     return JSONResponse(result)
+
