@@ -14,7 +14,8 @@ Through its **interactive AI-generated avatar**, patients can enjoy **natural, h
 - 🌍 **Deployed on Akash Network** → Decentralized, scalable, cost-efficient infrastructure.  
 
 ---
-![Main Interface](image.png)
+![Main Interface]![WhatsApp Image 2025-09-08 at 02 59 08_3c81fd78](https://github.com/user-attachments/assets/6ae59c8f-2fbf-4fe1-874d-a4b1a6a0a0bf)
+(image.png)
 
 ## 🚦 Core Features  
 
