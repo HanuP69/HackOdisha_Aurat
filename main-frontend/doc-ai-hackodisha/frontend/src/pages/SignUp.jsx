@@ -101,13 +101,24 @@ export default function SignupPage({ setAuthStatus, setUser }) {
   }
 
   return (
-    <div className="min-h-screen flex items-center bg-cover bg-center bg-no-repeat justify-center p-4 bg-gradient-to-br from-purple-50 via-blue-50 to-white" style={{ backgroundImage: "url('/images/auth-bg.png')" }}>
-      <div className="w-full max-w-md bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl shadow-xl border border-white border-opacity-20 p-8 relative">
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center p-4"
+      style={{ backgroundImage: "url('/images/auth-bg.png')" }}
+    >
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-md border p-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Care. Connect. Cure.
-          </h1>
-          <p className="text-gray-600 text-sm">Create your healthcare account</p>
+                Care.
+              </h1>
+              <p className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                Connect.
+              </p>
+              <p className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                Cure.
+              </p>
+          <p className="text-gray-500 text-sm mt-4">
+            Create your healthcare account
+          </p>
         </div>
 
         <div className="space-y-5">
@@ -155,7 +166,7 @@ export default function SignupPage({ setAuthStatus, setUser }) {
             <button
               onClick={sendVerificationEmail}
               disabled={isSendingEmail}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition-all duration-200 transform hover:scale-105"
             >
               {isSendingEmail ? "Sending..." : "Send Verification Email"}
             </button>
@@ -176,14 +187,14 @@ export default function SignupPage({ setAuthStatus, setUser }) {
                 <button
                   onClick={verifyEmail}
                   disabled={isVerifying}
-                  className="flex-1 bg-green-500 text-white py-3 rounded-lg"
+                  className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg transition-all duration-200"
                 >
                   {isVerifying ? "Verifying..." : "Verify"}
                 </button>
                 <button
                   onClick={sendVerificationEmail}
                   disabled={isSendingEmail}
-                  className="flex-1 bg-gray-500 text-white py-3 rounded-lg"
+                  className="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-3 rounded-lg transition-all duration-200"
                 >
                   {isSendingEmail ? "Sending..." : "Resend"}
                 </button>
@@ -219,7 +230,7 @@ export default function SignupPage({ setAuthStatus, setUser }) {
               <button
                 onClick={handleSubmit}
                 disabled={isSigningUp}
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 rounded-lg"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition-all duration-200 transform hover:scale-105"
               >
                 {isSigningUp ? "Signing Up..." : "Sign Up"}
               </button>
