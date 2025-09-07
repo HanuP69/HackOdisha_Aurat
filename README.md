@@ -88,9 +88,6 @@ npm run dev
 
 # Backend
 uvicorn main:app --reload
-🌐 Frontend → http://localhost:3000
-
-🔗 Backend APIs → http://localhost:8000
 
 🌐 Deployment
 DocAI is Dockerized and deployed on the Akash Network.
@@ -108,7 +105,7 @@ DocAI is Dockerized and deployed on the Akash Network.
 
 🔗 Blockchain-based verifiable prescriptions.
 
-❤️ Credits
+##❤️  Credits
 Developed with passion, innovation, and teamwork by:
 👩‍💻 Team AURAT 🚀
 
