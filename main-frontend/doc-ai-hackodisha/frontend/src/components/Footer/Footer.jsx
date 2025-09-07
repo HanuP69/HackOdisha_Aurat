@@ -6,6 +6,11 @@ import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'
 import { HiSparkles } from 'react-icons/hi'
 
 function Footer() {
+  const handleNavigation = (path) => {
+    navigate(path)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+  
   // Define navigation sections with proper links
   const navigationSections = [
     {
@@ -50,6 +55,7 @@ function Footer() {
   ];
 
   return (
+
     <footer className="relative bg-gradient-to-br from-purple-50 via-indigo-50 to-teal-50 text-gray-900 border-t-2 border-purple-600 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-100/40 via-indigo-100/30 to-teal-100/40 animate-pulse"></div>
@@ -126,22 +132,19 @@ function Footer() {
             {/* Meet Our Team Button */}
             <div className="pt-4 mb-4">
               <Link
-                to="/team"
-                className="relative inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 border-2 border-purple-600 rounded-lg text-white font-semibold hover:from-purple-700 hover:to-indigo-700 hover:border-purple-700 transition-all duration-300 hover:shadow-xl hover:shadow-purple-400/50 hover:scale-105 group/btn overflow-hidden"
-              >
-                {/* Button ripple effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-indigo-600 opacity-0 group-hover/btn:opacity-100 transition-all duration-300"></div>
-                
-                {/* Team icon */}
-                <svg className="relative z-10 w-5 h-5 group-hover/btn:scale-110 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
-                </svg>
-                
-                <span className="relative z-10 group-hover/btn:font-bold transition-all duration-300">Meet Our Team</span>
-                
-                {/* Button glow */}
-                <div className="absolute inset-0 bg-white opacity-0 group-hover/btn:opacity-10 group-hover/btn:animate-pulse transition-all duration-300"></div>
-              </Link>
+                  to="/team"
+                  className="relative inline-flex items-center gap-3 px-6 py-3 
+                            bg-purple-600 border-2 border-purple-600 rounded-lg 
+                            text-white font-semibold 
+                            hover:bg-purple-700 hover:border-purple-700 
+                            transition-all duration-300 hover:shadow-xl hover:shadow-purple-400/50 hover:scale-105"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                  </svg>
+                  <span>Meet Our Team</span>
+                </Link>
+
             </div>
 
             {/* Enhanced Social with impressive animations */}
@@ -275,14 +278,16 @@ function Footer() {
                   placeholder="Enter your email"
                   className="px-4 py-3 bg-white border-2 border-purple-300 rounded-lg text-gray-900 placeholder-purple-500 focus:outline-none focus:border-purple-600 focus:shadow-lg focus:shadow-purple-200/50 focus:scale-105 transition-all duration-300 min-w-[300px] hover:border-purple-400 hover:shadow-md"
                 />
-                <button className="relative px-6 py-3 bg-gradient-to-r from-purple-600 to-teal-600 border-2 border-purple-600 rounded-lg text-white font-semibold hover:from-purple-700 hover:to-teal-700 hover:border-purple-700 transition-all duration-300 hover:shadow-xl hover:shadow-purple-400/50 whitespace-nowrap hover:scale-110 group/btn overflow-hidden">
-                  {/* Button ripple effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-indigo-600 opacity-0 group-hover/btn:opacity-100 transition-all duration-300"></div>
-                  <span className="relative z-10">Subscribe</span>
-                  
-                  {/* Button glow */}
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover/btn:opacity-10 group-hover/btn:animate-pulse transition-all duration-300"></div>
-                </button>
+                <button 
+                    className="px-6 py-3 
+                              bg-indigo-600 border-2 border-indigo-600 rounded-lg 
+                              text-white font-semibold 
+                              hover:bg-indigo-700 hover:border-indigo-700 
+                              transition-all duration-300 hover:shadow-xl hover:shadow-indigo-400/50 hover:scale-110"
+                  >
+                    Subscribe
+                  </button>
+
               </div>
             </div>
           </div>
