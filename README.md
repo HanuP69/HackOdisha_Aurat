@@ -109,7 +109,8 @@ DocAI is Dockerized and deployed on the Akash Network.
 Developed with passion, innovation, and teamwork by:
 👩‍💻 Team AURAT 🚀
 
-
+DOCKER_IMAGE of OUR AI CHAT : https://hub.docker.com/r/tanishkop/my-fullstack-app
+DOCKER_IMAGE of OUR WEBSITE : https://hub.docker.com/r/usrjsr/doc-ai-frontend
 
 
 
