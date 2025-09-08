@@ -1,5 +1,7 @@
 # 🩺 DocAI  
 ---
+Super Important Update: For running this, you need to make your own api keys. Inside the .env file in demo-project/doc-ai/backend, plug in your *OWN* api keys and you're good to go.
+
 ## 📌 Overview  
 **DocAI** is an **innovative healthcare solution** that provides patients with a **convenient, user-friendly, and accessible interface** to connect with **AI-powered virtual doctor** in real time.  
 
